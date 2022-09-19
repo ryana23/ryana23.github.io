@@ -1,3 +1,4 @@
 #build settings
 markdown: kramdown
-theme: Slate
+
+remote_theme: LeNPaul/Millennial
