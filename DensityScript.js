@@ -1,3 +1,8 @@
+
+import * as d3 from "d3";
+
+async function drawDensity() {
+
 // https://observablehq.com/@d3/density-contours@145
 function _1(md){return(
     md`# Density Contours
@@ -101,7 +106,7 @@ function _1(md){return(
       const main = runtime.module();
       function toString() { return this.url; }
       const fileAttachments = new Map([
-        ["faithful.tsv", {url: new URL("./files/98d78d7f290f9776833e989617d49b592039ea65fee3b451764067cccd582eac122b3a07619cf223e8526910284fc105dfcb24b9af785535ee1dc6914687f9ac", import.meta.url), mimeType: null, toString}]
+        ["/data/faithful.tsv", {url: new URL("./files/98d78d7f290f9776833e989617d49b592039ea65fee3b451764067cccd582eac122b3a07619cf223e8526910284fc105dfcb24b9af785535ee1dc6914687f9ac", import.meta.url), mimeType: null, toString}]
       ]);
       main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
       main.variable(observer()).define(["md"], _1);
@@ -116,4 +121,5 @@ function _1(md){return(
       main.variable(observer("data")).define("data", ["d3","FileAttachment"], _data);
       return main;
     }
-    
+
+    drawDensity()
