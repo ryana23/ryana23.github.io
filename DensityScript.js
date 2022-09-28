@@ -119,4 +119,6 @@ function _1(md){return(
     main.variable(observer("data")).define("data", ["d3","FileAttachment"], _data);
     return main;
   }
+
+  import {howto, altplot} from "@d3/example-components"
   drawDensity()
