@@ -52,7 +52,14 @@
 					<div id="main">
 						<div class="inner">
 							<h1>Mapping Tire Reefs</h1>
-							<span class="text/html"><img src="https://storymaps.arcgis.com/stories/886d8aad7ba047ec9ebb961ed2ab8512" alt="" /></span>
+							<section> 
+                                <div class="col-12"><span class="image fit">
+                                    <embed type="text/html" src="https://storymaps.arcgis.com/stories/886d8aad7ba047ec9ebb961ed2ab8512" width=100% height="516.5">
+									</div>
+
+
+                            </section>
+							
 							<p>In the 1970's the Washington Department of Fish created artificial reefs to improve fishing near public docks and beaches. Some of these reefs were created using bundled tires.</p>
 							<p>Tires are now known to release toxic chemicals that harm many marine species. DNR's Aquatics Restoration team and our Aquatic Assessment and Monitoring Team worked togerther to map the location, size and depth of the reefs in 3d.</p>
 							<p>This storymap shows how the project came together, and some of our results. I worked with our science teams to develop and formalize an analysis procedure using ArcPro tools in a custom ArcGIS toolbox (<a href="https://github.com/ryana23/TireNodeVolumeAnalysisArcGIS/" target="_blank">GitHub Repository</a>). We have estimated the number of tires by calculating the volumn above the bottom for each tire bundle using a Python script in ArcGIS Pro. First, the area imediatly surounding the bundles is clipped from the larger area, then the areas within 1.5 meters from the bundle are used in a nearest neighbors interpolation to fill in an estimate of the sea bottom. We calculate the volumn by then subtracting this "Bare surface" to the original surface with the tires.</p>
