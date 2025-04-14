@@ -60,9 +60,10 @@
 
                             </section>
 							
-							<p>In the 1970's the Washington Department of Fish created artificial reefs to improve fishing near public docks and beaches. Some of these reefs were created using bundled tires.
-							Tires are now known to release toxic chemicals that harm many marine species. DNR's Aquatics Restoration team and our Aquatic Assessment and Monitoring Team worked together to map the location, size and depth of the reefs in 3d.
-							This storymap shows how the project came together, and what we are doing to restore the affected areas of Puget Sound.</p><p> I worked with our science teams to develop and formalize an analysis procedure using ArcPro tools in a custom ArcGIS toolbox (<a href="https://github.com/ryana23/TireNodeVolumeAnalysisArcGIS/" target="_blank">GitHub Repository</a>). We have estimated the number of tires by calculating the volumn above the bottom for each tire bundle using a Python script in ArcGIS Pro. First, the area imediatly surounding the bundles is clipped from the larger area, then the areas within 1.5 meters from the bundle are used in a nearest neighbors interpolation to fill in an estimate of the sea bottom. We calculate the volumn by then subtracting this "Bare surface" to the original surface with the tires.</p>
+							<p>In the 1970s, the Washington Department of Fish created artificial reefs to improve fishing near public docks and beaches. Some of these reefs were created using bundled tires. 
+								Tires are now known to release toxic chemicals that harm many marine species. DNR's Aquatics Restoration team and our Aquatic Assessment and Monitoring Team worked together to map the location, 
+								size, and depth of the reefs in 3D. This storymap shows how we put the project together, and what we are doing to restore the affected areas of Puget Sound.</p>
+								<p>I teamed up with our science groups to create a process to estimate the volume and number of tires. We use a custom ArcPro Python Script tool in an ArcGIS toolbox. You can find it in our (<a href="https://github.com/ryana23/TireNodeVolumeAnalysisArcGIS/" target="_blank" style="color:dodgerblue;">GitHub Repository</a>). First, the tool clips the area around the bundles from the larger region. Then, it outlines an area within 1.5 meters of each bundle. It uses a nearest-neighbors interpolation to estimate the seabed under the tires. Now we can calculate the volume by subtracting the "Bare surface" from the original surface with the tires.</p>
 						</div>
 					</div>
 
