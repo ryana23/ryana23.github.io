@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Tire Reef Mapping</title>
+		<title>GIS Portfolio: Remote Sensing</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -40,10 +40,6 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="tireReefs.html">Tire Reefs</a></li>
-							<li><a href="D3ex.html">D3 Data Visualizations</a></li>
-							<li><a href="priorityIndex.html">Priority Mapping</a></li>
-							<li><a href="sonarStorymap.html">Sonar Mapping</a></li>
                             <li><a href="ContactMe.html">Contact Me</a></li>
 						</ul>
 					</nav>
@@ -60,10 +56,8 @@
 
                             </section>
 							
-							<p>In the 1970s, the Washington Department of Fish created artificial reefs to improve fishing near public docks and beaches. Some of these reefs were created using bundled tires. 
-								Tires are now known to release toxic chemicals that harm many marine species. DNR's Aquatics Restoration team and our Aquatic Assessment and Monitoring Team worked together to map the location, 
-								size, and depth of the reefs in 3D. This storymap shows how we put the project together, and what we are doing to restore the affected areas of Puget Sound.</p>
-								<p>I teamed up with our science groups to create a process to estimate the volume and number of tires. We use a custom ArcPro Python Script tool in an ArcGIS toolbox. You can find it in our (<a href="https://github.com/ryana23/TireNodeVolumeAnalysisArcGIS/" target="_blank" style="color:dodgerblue;">GitHub Repository</a>). First, the tool clips the area around the bundles from the larger region. Then, it outlines an area within 1.5 meters of each bundle. It uses a nearest-neighbors interpolation to estimate the seabed under the tires. Now we can calculate the volume by subtracting the "Bare surface" from the original surface with the tires.</p>
+							<p>In the 1970s, the Washington Department of Fish built artificial reefs to boost fishing near public docks and beaches. Some reefs used bundled tires, which now release harmful chemicals that affect marine life. The DNR's Aquatics Restoration team and our Aquatic Assessment and Monitoring Team joined forces to create a 3D map of these reefs' locations, sizes, and depths. This storymap shows how we developed the project and our efforts to restore affected areas of Puget Sound.</p>
+							<p>I collaborated with our science teams to creat a tool to estimate the volume and number of tires. We use a custom ArcPro Python Script tool inside an ArcGIS toolbox (you can find this tool in our <a href="https://github.com/ryana23/TireNodeVolumeAnalysisArcGIS/" target="_blank" style="color: dodgerblue; --darkreader-inline-color: var(--darkreader-text-1e90ff, #2fa2ff);" data-darkreader-inline-color="">GitHub Repository</a>). First, the tool clips the area around the bundles from the larger region. Then, it outlines an area within 1.5 meters of each bundle. It uses nearest-neighbors interpolation to estimate the seabed under the tires to create a false, tire-free sea surface. Finally, we calculate the volume by subtracting this "Bare surface" from the original surface with the tires.</p>
 						</div>
 					</div>
 
